@@ -1,3 +1,7 @@
+About
+===============
+This package is forked from Joschi Kuphal's [gulp-svg-sprite](https://github.com/jkphl/gulp-svg-sprite), I make it to support "fill", so that we can use css to control the color of svg icons, please set the color to black(mean pure black, #000, other colors will remain.) if you want to change it in any stylesheet files.
+
 # gulp-svg-sprite [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Development Dependency Status][devdepstat-image]][devdepstat-url]
 ===============
 
