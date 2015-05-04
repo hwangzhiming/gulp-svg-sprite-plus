@@ -15,14 +15,14 @@ var through2 						= require('through2'),
 	SVGSpriter						= require('svg-sprite'),
 	PluginError						= gutil.PluginError,
 	
-	PLUGIN_NAME						= 'gulp-svg-sprite';
+	PLUGIN_NAME						= 'gulp-svg-sprite-plus';
 
 /**
  * Plugin level function
  * 
  * @param {Object} config			SVGSpriter main configuration
  */
-function gulpSVGSprite(config) {
+function gulpSVGSpritePlus(config) {
 
 	// Extend plugin error
 	function extendError(pError, error) {
@@ -62,7 +62,13 @@ function gulpSVGSprite(config) {
 			} else {
 				for (var mode in result) {
 					for (var resource in result[mode]) {
-						stream.push(result[mode][resource]);
+						var rs = result[mode][resource];
+						var content = rs.contents.toString();
+						content = content.replace(/fill="none"/ig,"");
+						content = content.replace(/fill="#000"/ig,"");
+						content = content.replace(/fill="#000000"/ig,"");
+						rs.contents = new Buffer(content);
+						stream.push(rs);
 					}
 				}
 			}
@@ -71,4 +77,4 @@ function gulpSVGSprite(config) {
 	});
 }
 
-module.exports			= gulpSVGSprite;
+module.exports			= gulpSVGSpritePlus;

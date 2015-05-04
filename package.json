@@ -1,24 +1,24 @@
 {
-	"name": "gulp-svg-sprite",
+	"name": "gulp-svg-sprite-plus",
 	"description": "SVG sprites & stacks galore — Gulp plugin wrapping around svg-sprite that reads in a bunch of SVG files, optimizes them and creates SVG sprites and CSS resources in various flavours",
 	"version": "1.1.2",
-	"homepage": "https://github.com/jkphl/gulp-svg-sprite",
-	"author": {
+	"homepage": "https://github.com/hwangzhiming/gulp-svg-sprite-plus",
+	"author": [{
 		"name": "Joschi Kuphal",
 		"email": "joschi@kuphal.net",
 		"url": "https://jkphl.is"
-	},
+	}],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jkphl/gulp-svg-sprite.git"
+		"url": "https://github.com/hwangzhiming/gulp-svg-sprite-plus.git"
 	},
 	"bugs": {
-		"url": "https://github.com/jkphl/gulp-svg-sprite/issues"
+		"url": "https://github.com/hwangzhiming/gulp-svg-sprite-plus/issues"
 	},
 	"licenses": [
 		{
 			"type": "MIT",
-			"url": "https://github.com/jkphl/gulp-svg-sprite/blob/master/LICENSE.txt"
+			"url": "https://github.com/hwangzhiming/gulp-svg-sprite-plus/blob/master/LICENSE.txt"
 		}
 	],
 	"main": "index.js",
